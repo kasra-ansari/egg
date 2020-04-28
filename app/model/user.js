@@ -6,6 +6,9 @@ module.exports = app => {
     password: { type: String },
     fullName: { type: String },
     createdAt: { type: Date, default: Date.now },
+    // posts: [
+    //   { type: mongoose.Schema.Types.ObjectId, ref: 'Post' },
+    // ],
   });
   return mongoose.model('User', UserSchema);
 }

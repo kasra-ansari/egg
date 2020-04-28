@@ -2,33 +2,32 @@ import {handleActions} from 'redux-actions';
 import * as Actions from '../actions/constants';
 
 const initialState = {
-    user: {},
-    shareInformation: {}
+    token: '',
+    isLogin: !!localStorage.getItem('isLogin') && localStorage.getItem('isLogin') === 'true',
+}
 
-};
-
-export const AppReducers =  handleActions({
-    [Actions.SET_USER_INFO]: (state, action) => (
+export const AppReducers = handleActions({
+    //SID
+    [Actions.SET_TOKEN]: (state, action) => (
         {
             ...state,
-            user: action.data
+            token: action.data
         }
     ),
 
-    [Actions.SET_SHARE_INFORMATION]: (state, action) => (
+
+    //Login
+    [Actions.SET_IS_LOGIN]: state => (
         {
             ...state,
-            shareInformation: action.data
+            isLogin: true
         }
     ),
-
-    [Actions.UPDATE_SHARE_INFO]: (state, action) => (
-        {
-            ...state,
-            shareInformation: {
-                ...state.shareInformation,
-                ...action.data
-            }
-        }
-    )
+    [Actions.UNSET_IS_LOGIN]: () => {
+        console.log("UNSET", initialState)
+        return ({
+            ...initialState,
+            isLogin:false
+        })
+    }
 }, initialState);

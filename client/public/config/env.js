@@ -1,3 +1,4 @@
 env = {
-    WS_SERVER: 'ws://95.156.253.166:8000/ws'
+    // WS_SERVER: 'ws://95.156.253.172:8000/ws',
+    API_SERVER: 'http://localhost:7001/'
 }

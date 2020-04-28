@@ -15,7 +15,7 @@ class UserController extends Controller {
     ctx.validate(createRule, ctx.request.body);
     const payload = ctx.request.body || {};
 
-    const res = await service.userAccess.login(payload);
+    const res = await service.userAccess.accessOrRegister(payload);
 
     ctx.helper.success({ ctx, res });
   }
@@ -29,6 +29,24 @@ class UserController extends Controller {
 
     ctx.helper.success({ ctx, res });
   }
+
+  async index() {
+    const { ctx, service } = this;
+
+    const res = await service.user.list();
+
+    ctx.helper.success({ ctx, res });
+  }
+
+  async destroy() {
+    const { ctx, service } = this;
+    const { id } = ctx.params;
+
+    const res = await service.user.delete(id);
+
+    ctx.helper.success({ ctx, res });
+  }
+
 }
 
 module.exports = UserController;

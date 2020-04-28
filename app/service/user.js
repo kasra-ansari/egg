@@ -15,8 +15,26 @@ class UserService extends Service {
       ctx.throw(404, 'user not found');
     }
 
-    return ctx.model.User.findByIdAndUpdate(_id, payload);
+    await ctx.model.User.findByIdAndUpdate(_id, payload)
+
+    return await ctx.service.user.find(_id);
   }
+
+  async list() {
+    const { ctx } = this;
+
+    const users = await ctx.model.User.find({}).exec();
+    const count = await ctx.model.User.countDocuments().exec();
+
+    return { list: users, total: count };
+  }
+
+  async delete(_id) {
+    const { ctx } = this;
+    const res = await ctx.model.User.findByIdAndDelete(_id) !== null ? 'ok' : ctx.throw(404, 'user not found');
+    return res;
+  }
+
   //Common
   async findByMobile(mobile) {
     return this.ctx.model.User.findOne({ mobile: mobile });

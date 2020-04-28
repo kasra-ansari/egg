@@ -126,7 +126,7 @@ checkBrowsers(paths.appPath, isInteractive)
         console.log();
       }
 
-      console.log(chalk.cyan('Starting the development server...\n', port));
+      console.log(chalk.cyan('Starting the development server...\n'));
       // openBrowser(urls.localUrlForBrowser);
     });
 

@@ -3,7 +3,7 @@
 const Service = require('egg').Service;
 
 class UserAccessService extends Service {
-  async login(payload) {
+  async accessOrRegister(payload) {
     const { ctx, service } = this;
 
     const userInfo = await service.user.findByMobile(payload.mobile);
@@ -18,10 +18,10 @@ class UserAccessService extends Service {
   }
 
   async current() {
-    const { ctx, service } = this
-    const res = await service.userAccess.current();
+    const { ctx, service } = this;
+    const _id = ctx.state.user.data._id;
 
-    ctx.helper.success({ ctx, res });
+    return await service.user.find(_id);
   }
 }
 

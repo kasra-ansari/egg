@@ -1,50 +1,35 @@
-import React, {Component} from "react";
+import React, {Component, Suspense} from "react";
 import {connect} from "react-redux";
-import Websocket from "react-websocket";
-import {setShareInformation, setUserInfo} from "../../redux/app/actions";
-import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://127.0.0.1:4001";
+import LayoutSwitcher from "./layouts/LayoutSwitcher";
+import {Redirect, Route} from "react-router-dom";
+import {PrivateRoute} from "../../components/PrivateRoute";
+import Loading from "../../components/Loading";
+// import NotFoundPage from "./NotFoundPage";
 
-// const mapStateToProps = (state) => (
-//     {
-//         isLogin: state.app.isLogin,
-//         sid: state.sid,
-//         shareInformation: state.app.shareInformation
-//     }
-// );
-//
-// const mapDispatchToProps = (dispatch) => (
-//     {
-//         setUserInfoAction: (data) => dispatch(setUserInfo(data)),
-//         setShareInformationAction: data => dispatch(setShareInformation(data))
-//     }
-// );
+const Login = React.lazy(() => import("../Users/Login"));
 
-// @connect(mapStateToProps, mapDispatchToProps)
+const mapStateToProps = (state) => (
+    {
+        isLogin: state.app.isLogin,
+    }
+);
+
+@connect(mapStateToProps)
 class App extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            data: '',
-        }
-    }
-
-    componentDidMount() {
-        const socket = socketIOClient(ENDPOINT);
-        socket.on("test", data => {
-            console.log("DATA COME", data)
-            this.setState({data: data})
-        });
-
-    }
-
     render() {
+        console.log("redux", this.props)
         return (
-            <div>
-                hi {JSON.stringify(this.state.data)}
+            <Suspense fallback={<Loading/>}>
+                <LayoutSwitcher condition={this.props.isLogin}>
+                    <Route exact path={`/`} render={() => (
+                        this.props.isLogin ? <Redirect to={`stocks`}/> : <Redirect to={`login`}/>
+                    )}/>
 
-            </div>
+                    {/*<PrivateRoute path={`/stocks`} component={Stocks}/>*/}
+                    <Route path={`/login`} component={Login}/>
+                    {/*<Route path="*" component={NotFoundPage}/>*/}
+                </LayoutSwitcher>
+            </Suspense>
         )
     }
 }

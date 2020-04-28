@@ -1,7 +1,7 @@
 
-exports.success = ({ ctx, res = null, msg = 'success' })=> {
+exports.success = ({ ctx, res = null, msg = 'success' }) => {
   ctx.body = {
-    code: 200,
+    status: 200,
     data: res,
     msg,
   }

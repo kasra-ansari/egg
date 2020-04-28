@@ -1,26 +1,37 @@
 import {applyMiddleware, compose, createStore} from "redux";
 import {createLogger} from "redux-logger";
 import rootReducer from "../reducers";
-import {loadSid, loadState, saveState} from './localStorage';
+// import {loadSid} from './localStorage';
+import createSagaMiddleware from "redux-saga";
+import rootSaga from "../../saga";
 
-const logger = createLogger();
+const loggerOption = {
+    predicate(getState, action) {
+        if (action.type === 'SET_ORDER_BOOK' || action.type === "ORDER_BOOK") return false;
+        return true
+    }
+}
+const logger = createLogger(loggerOption);
 const persistedState = {
-    ...loadState(),
-    sid: loadSid()
+    // ...loadState(),
+    // sid: loadSid()
 };
+
+const sagaMiddleware = createSagaMiddleware();
 
 let enhancer;
 
 if (process.env.NODE_ENV !== 'production') {
     enhancer = compose(
         applyMiddleware(
-            logger
+            logger,
+            sagaMiddleware
         )
     )
 
 } else {
     enhancer = compose(
-        applyMiddleware()
+        applyMiddleware(sagaMiddleware)
     )
 }
 
@@ -39,10 +50,12 @@ if (module.hot) {
         })
 }
 
+sagaMiddleware.run(rootSaga)
 
-store.subscribe(() => {
-    saveState(store.getState())
-});
+// store.subscribe(() => {
+//     // saveSid(store.getState().sid)
+//     // saveState(store.getState())
+// });
 
 
 export default store;

@@ -15,6 +15,7 @@ module.exports = appInfo => {
       csrf: {
         enable: false,
       },
+      domainWhiteList: [ 'http://localhost:3000' ],
     },
   };
 
@@ -31,6 +32,7 @@ module.exports = appInfo => {
       autoReconnect: true,
       reconnectTries: Number.MAX_VALUE,
       bufferMaxEntries: 0,
+      useFindAndModify: false,
     },
   };
 
@@ -40,6 +42,9 @@ module.exports = appInfo => {
     match: '/jwt', // optional
   };
 
+  config.logger = {
+    dir: './log',
+  }
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

@@ -1,0 +1,389 @@
+2020-04-27 11:50:45,053 ERROR 24627 [-/::1/-/15ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 24627
+hostname: ansari
+
+2020-04-27 11:51:20,858 ERROR 24663 [-/::1/-/17ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 24663
+hostname: ansari
+
+2020-04-27 11:55:39,404 ERROR 24849 [-/::1/-/16ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 24849
+hostname: ansari
+
+2020-04-27 11:58:58,263 ERROR 25055 [-/::1/-/16ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 25055
+hostname: ansari
+
+2020-04-27 11:59:46,688 ERROR 25117 [-/::1/-/16ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 25117
+hostname: ansari
+
+2020-04-27 12:00:10,836 ERROR 25147 [-/::1/-/16ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 25147
+hostname: ansari
+
+2020-04-27 12:01:32,068 ERROR 25231 [-/::1/-/15ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 25231
+hostname: ansari
+
+2020-04-27 12:03:04,039 ERROR 25334 [-/::1/-/15ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/home/kasra/www/egg/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/home/kasra/www/egg/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 25334
+hostname: ansari
+
+2020-04-27 12:04:20,073 ERROR 25512 [-/::1/-/14ms GET /user/list] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    --> starting at object with constructor 'Server'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'coreTopology' -> object with constructor 'Server'
+    |     ...
+    |     property 's' -> object with constructor 'Object'
+    --- property 'topology' closes the circle
+    at JSON.stringify (<anonymous>)
+    at UserService.list (/home/kasra/www/egg/app/service/user.js:27:17)
+    at UserController.index (/home/kasra/www/egg/app/controller/user.js:36:36)
+    at Object.callFn (/home/kasra/www/egg/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/kasra/www/egg/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/kasra/www/egg/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/kasra/www/egg/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/kasra/www/egg/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/kasra/www/egg/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at middleware (/home/kasra/www/egg/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async errorHandler (/home/kasra/www/egg/app/middleware/error_handler.js:4:7)
+    at async /home/kasra/www/egg/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+
+pid: 25512
+hostname: ansari
+
+2020-04-27 14:01:16,740 ERROR 30869 [-/::1/-/14ms DELETE /users/5ea576b04da65a190a942eab] nodejs.TypeError: Cannot destructure property 'id' of 'ctx.request.params' as it is undefined.
+    at UserController.destroy (/home/kasra/www/egg/app/controller/user.js:43:13)
+    at Object.callFn (/home/kasra/www/egg/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/kasra/www/egg/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/kasra/www/egg/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/kasra/www/egg/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/kasra/www/egg/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/kasra/www/egg/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at middleware (/home/kasra/www/egg/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async errorHandler (/home/kasra/www/egg/app/middleware/error_handler.js:4:7)
+    at async /home/kasra/www/egg/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/home/kasra/www/egg/node_modules/koa-session/index.js:41:7)
+
+pid: 30869
+hostname: ansari
+
+2020-04-28 11:26:59,788 ERROR 6673 [egg-mongoose] mongodb://127.0.0.1:27017/egg disconnected
+2020-04-28 11:26:59,789 ERROR 6673 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 6673
+hostname: ansari
+
+2020-04-28 11:26:59,790 ERROR 6673 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 6673
+hostname: ansari
+
+2020-04-28 11:26:59,791 ERROR 6673 [-/127.0.0.1/-/0ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 6673
+hostname: ansari
+
+2020-04-28 11:29:14,944 ERROR 6791 [egg-mongoose] mongodb://127.0.0.1:27017/egg disconnected
+2020-04-28 11:29:14,945 ERROR 6791 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 6791
+hostname: ansari
+
+2020-04-28 11:29:14,946 ERROR 6791 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 6791
+hostname: ansari
+
+2020-04-28 11:29:14,947 ERROR 6791 [-/127.0.0.1/-/0ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 6791
+hostname: ansari
+
+2020-04-28 13:25:14,411 ERROR 11243 [-/::1/-/16ms GET /posts/5ea7ee03a496cc2ae1c8aefb] nodejs.TypeError: Cannot destructure property 'id' of 'ctx.request.params' as it is undefined.
+    at PostController.show (/home/kasra/www/egg/app/controller/post.js:26:13)
+    at Object.callFn (/home/kasra/www/egg/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/kasra/www/egg/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/kasra/www/egg/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/kasra/www/egg/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/kasra/www/egg/node_modules/@eggjs/router/node_modules/koa-compose/index.js:44:32)
+    at next (/home/kasra/www/egg/node_modules/@eggjs/router/node_modules/koa-compose/index.js:45:18)
+    at middleware (/home/kasra/www/egg/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async errorHandler (/home/kasra/www/egg/app/middleware/error_handler.js:4:7)
+    at async /home/kasra/www/egg/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/home/kasra/www/egg/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/home/kasra/www/egg/node_modules/koa-session/index.js:41:7)
+
+pid: 11243
+hostname: ansari
+
