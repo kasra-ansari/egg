@@ -9,13 +9,12 @@ function* loginMiddleware(action) {
 }
 
 function* watchLogin() {
-    const reqChan = yield actionChannel(ActionType.SET_SESSION);
 
     while(true) {
         try {
-            const action = yield take(reqChan);
+            // const action = yield take(reqChan);
 
-            yield call(loginMiddleware, action);
+            // yield call(loginMiddleware, action);
         } catch (e) {
 
         }

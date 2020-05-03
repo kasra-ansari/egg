@@ -3,21 +3,21 @@ import {Button, Card, Form, Icon, Input, Row, message} from "antd";
 import "./styles.less";
 import {batch, connect} from "react-redux";
 import RequestService from "../../../services/requests";
-import {setSession, setToken} from "../../../redux/app/actions";
-import Api from "../../../services/Api";
+import {setIsLogin, setToken} from "../../../redux/app/actions";
 
 
 const FormItem = Form.Item;
 
 const mapStateToProps = state => (
     {
-        isLogin: state.app.isLogin
+        isLogin: state.app.isLogin,
     }
 );
 
 const mapDispatchToProps = dispatch => (
     {
         setTokenAction: data => dispatch(setToken(data)),
+        setIsLoginAction: () => dispatch(setIsLogin())
     }
 )
 
@@ -49,7 +49,10 @@ class Login extends Component {
                 RequestService.login(values).then(res => {
                     console.log("login res", res)
                     if (res) {
-                        this.props.setTokenAction(res.data.data.token)
+                        batch(() => {
+                            this.props.setTokenAction(res.data.data.token);
+                            this.props.setIsLoginAction();
+                        })
                     }
                 })
             }

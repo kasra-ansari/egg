@@ -1,10 +1,10 @@
 import React, {Suspense} from "react";
 import './style.less'
-import {Layout, Menu} from 'antd';
+import {Button, Icon, Layout, Menu, Tooltip} from 'antd';
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 import logo from "./logo.png";
-
+import Sidebar from "./sidebar/index";
 
 
 const {Header, Content} = Layout;
@@ -46,25 +46,19 @@ class PrivateLayout extends React.Component {
     render() {
         return (
             <Layout className="private-layout">
-                {/*<Sidebar collapsed={this.state.collapsed}/>*/}
-                <Layout hasSider={false}>
+                <Sidebar collapsed={this.state.collapsed}/>
+                <Layout>
                     <Header className="header">
-                        <div className="header-left-side"/>
+                        <Icon
+                            className="trigger"
+                            type={this.state.collapsed ? 'menu-fold' : 'menu-unfold'}
+                            onClick={this.toggle}
+                        />
+                        <Tooltip title="logout">
+                            <Button onClick={this.handleLogOut} type="danger" shape="circle" size="large" icon="logout"
+                                    style={{float: 'left', margin: '10px 20px'}}/>
+                        </Tooltip>
 
-                        <div className="logo">
-                            <img src={logo} alt="quantra"/>
-                        </div>
-                        <Menu
-                            theme="dark"
-                            mode="horizontal"
-                            // defaultSelectedKeys={['stocks']}
-                            selectedKeys={[this.props.location.pathname.replace("/", "")]}
-                            style={{lineHeight: '50px'}}
-                            onClick={this.handleMenuClick}
-                        >
-                            <Menu.Item key="stocks">سهام</Menu.Item>
-                            <Menu.Item disabled key="bonds">اوراق</Menu.Item>
-                        </Menu>
                     </Header>
                     <Content className='content'>
                         {this.props.children}

@@ -4,6 +4,7 @@ import rootReducer from "../reducers";
 // import {loadSid} from './localStorage';
 import createSagaMiddleware from "redux-saga";
 import rootSaga from "../../saga";
+import {loadState, saveState} from "./localStorage";
 
 const loggerOption = {
     predicate(getState, action) {
@@ -13,7 +14,7 @@ const loggerOption = {
 }
 const logger = createLogger(loggerOption);
 const persistedState = {
-    // ...loadState(),
+    ...loadState(),
     // sid: loadSid()
 };
 
@@ -50,12 +51,11 @@ if (module.hot) {
         })
 }
 
-sagaMiddleware.run(rootSaga)
+// sagaMiddleware.run(rootSaga)
 
-// store.subscribe(() => {
-//     // saveSid(store.getState().sid)
-//     // saveState(store.getState())
-// });
+store.subscribe(() => {
+    saveState(store.getState())
+});
 
 
 export default store;

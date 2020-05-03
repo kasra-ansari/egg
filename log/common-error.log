@@ -387,3 +387,165 @@ hostname: ansari
 pid: 11243
 hostname: ansari
 
+2020-04-29 09:11:11,975 ERROR 18024 nodejs.ClusterClientNoResponseError: client no response in 59752480ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/home/kasra/www/egg/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 18024
+hostname: ansari
+
+2020-04-29 11:30:58,233 ERROR 18024 nodejs.ClusterClientNoResponseError: client no response in 7205570ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/home/kasra/www/egg/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 18024
+hostname: ansari
+
+2020-05-02 11:11:00,266 ERROR 16925 [egg-mongoose] mongodb://127.0.0.1:27017/egg disconnected
+2020-05-02 11:11:00,267 ERROR 16925 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 16925
+hostname: ansari
+
+2020-05-02 11:11:00,268 ERROR 16925 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 16925
+hostname: ansari
+
+2020-05-02 11:11:00,269 ERROR 16925 [-/127.0.0.1/-/0ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 16925
+hostname: ansari
+
+2020-05-02 11:11:45,023 ERROR 17268 [egg-mongoose] mongodb://127.0.0.1:27017/egg disconnected
+2020-05-02 11:11:45,024 ERROR 17268 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 17268
+hostname: ansari
+
+2020-05-02 11:11:45,024 ERROR 17268 nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 17268
+hostname: ansari
+
+2020-05-02 11:11:45,026 ERROR 17268 [-/127.0.0.1/-/0ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [127.0.0.1:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+    at Pool.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/topologies/server.js:438:11)
+    at Pool.emit (events.js:321:20)
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:561:14
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/pool.js:994:11
+    at /home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:31:7
+    at callback (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:264:5)
+    at Socket.<anonymous> (/home/kasra/www/egg/node_modules/mongodb/lib/core/connection/connect.js:294:7)
+    at Object.onceWrapper (events.js:428:26)
+    at Socket.emit (events.js:321:20)
+    at emitErrorNT (internal/streams/destroy.js:84:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+name: "MongoNetworkError"
+pid: 17268
+hostname: ansari
+

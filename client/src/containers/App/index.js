@@ -7,6 +7,9 @@ import Loading from "../../components/Loading";
 // import NotFoundPage from "./NotFoundPage";
 
 const Login = React.lazy(() => import("../Users/Login"));
+const Dashboard = React.lazy(() => import("../Dashboard/index"));
+const UsersList = React.lazy(() => import("../Users/Lists"));
+const PostsContainer = React.lazy(() => import("../Posts"));
 
 const mapStateToProps = (state) => (
     {
@@ -22,10 +25,14 @@ class App extends Component {
             <Suspense fallback={<Loading/>}>
                 <LayoutSwitcher condition={this.props.isLogin}>
                     <Route exact path={`/`} render={() => (
-                        this.props.isLogin ? <Redirect to={`stocks`}/> : <Redirect to={`login`}/>
+                        this.props.isLogin ? <Redirect to={`dashboard`}/> : <Redirect to={`login`}/>
                     )}/>
 
-                    {/*<PrivateRoute path={`/stocks`} component={Stocks}/>*/}
+                    <PrivateRoute path={`/dashboard`} component={Dashboard}/>
+                    <PrivateRoute path={`/users/list`} component={UsersList}/>
+
+                    <PrivateRoute path={`/posts`} component={PostsContainer}/>
+
                     <Route path={`/login`} component={Login}/>
                     {/*<Route path="*" component={NotFoundPage}/>*/}
                 </LayoutSwitcher>

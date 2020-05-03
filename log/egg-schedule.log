@@ -469,3 +469,24 @@
 2020-04-28 14:48:19,089 INFO 18118 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
 2020-04-28 14:48:19,089 INFO 18118 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js
 2020-04-28 14:48:19,089 INFO 18118 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-05-02 11:10:58,654 INFO 16925 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-05-02 11:10:58,654 INFO 16925 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-05-02 11:10:58,654 INFO 16925 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-05-02 11:11:44,776 INFO 17268 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-05-02 11:11:44,777 INFO 17268 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-05-02 11:11:44,777 INFO 17268 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-05-02 11:11:59,468 INFO 17399 [Timer] /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 62280536ms at 2020-05-03 04:30:00.004
+2020-05-02 11:11:59,469 INFO 17399 [Timer] /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 46080532ms at 2020-05-03 00:00:00.001
+2020-05-02 11:11:59,469 INFO 17399 [Timer] /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 46081531ms at 2020-05-03 00:00:01.000
+2020-05-02 11:11:59,194 INFO 17410 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-05-02 11:11:59,194 INFO 17410 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-05-02 11:11:59,194 INFO 17410 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-05-03 13:53:05,457 INFO 13545 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-05-03 13:53:05,457 INFO 13545 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-05-03 13:53:05,457 INFO 13545 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-05-03 13:53:05,757 INFO 13534 [Timer] /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 52614245ms at 2020-05-04 04:30:00.002
+2020-05-03 13:53:05,757 INFO 13534 [Timer] /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 36414243ms at 2020-05-04 00:00:00.000
+2020-05-03 13:53:05,758 INFO 13534 [Timer] /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 36415243ms at 2020-05-04 00:00:01.001
+2020-05-03 13:57:23,351 INFO 14484 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-05-03 13:57:23,352 INFO 14484 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-05-03 13:57:23,352 INFO 14484 [egg-schedule]: register schedule /home/kasra/www/egg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

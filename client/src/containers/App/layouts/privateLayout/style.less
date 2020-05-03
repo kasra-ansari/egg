@@ -44,7 +44,7 @@
 
 }
 .private-layout {
-    min-height: 100vh;
+    min-height: 100vh !important;
     direction: @direction;
 }
 .header {
@@ -53,9 +53,9 @@
 }
 .content {
     height: 100%;
-    //margin: 16px;
-    //background: #fff;
-    //padding: 2px;
+    margin: 16px;
+    background: #fff;
+    padding: 2px;
     direction: @direction;
     position: relative;
     h2 {
@@ -75,14 +75,14 @@
   }
 
 .logo {
-    //height: 32px;
-    //background: rgba(255,255,255,.2);
-    //margin: 16px;
-    //text-align: center;
-    //line-height: 32px;
-    //color: lightgrey;
+    height: 32px;
+    background: rgba(255,255,255,.2);
+    margin: 16px;
+    text-align: center;
+    line-height: 32px;
+    color: lightgrey;
     float: right;
-    height: 100%;
+    //height: 100%;
 }
 
 [class*="ant-col-"] {
@@ -271,7 +271,7 @@
 }
 
 .ant-layout-header {
-    background: none !important;
+    background: #ececec !important;
     height: 50px !important;
 }
 

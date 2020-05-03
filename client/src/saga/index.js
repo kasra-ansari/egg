@@ -3,7 +3,7 @@ import watchLogin from "./Login";
 
 function* watchAll() {
     yield all([
-        fork(watchLogin),
+        // fork(watchLogin),
     ])
 }
 

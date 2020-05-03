@@ -1,4 +1,3 @@
-
 export const loadState = () => {
     try {
         const serializedState = localStorage.getItem('state');
@@ -13,43 +12,11 @@ export const loadState = () => {
     }
 };
 
-export const loadSid = () => {
-    try {
-        const sid = localStorage.getItem('sid');
-
-        if (sid === null) {
-            return '';
-        }
-
-        return JSON.parse(sid)
-    } catch (e) {
-
-    }
-}
-
-export const saveSid = (state) => {
+export const saveState = (state) => {
     try {
         const serializedState = JSON.stringify(state);
-        localStorage.setItem('sid', serializedState);
+        localStorage.setItem('state', serializedState);
     } catch (e) {
-        console.log(e)
+        console.log(e);
     }
-}
-
-let oldTimeStamp = (Date.now()).valueOf();
-const millisecondsBetween = 10000;
-export const saveState = (state) => {
-
-    if (((Date.now()).valueOf() - oldTimeStamp) > millisecondsBetween) {
-        console.log("SAVE STATE, ", (Date.now()).valueOf() - oldTimeStamp )
-
-        try {
-            const serializedState = JSON.stringify(state);
-            localStorage.setItem('state', serializedState);
-            oldTimeStamp = (Date.now()).valueOf()
-        } catch (e) {
-            console.log(e);
-        }
-    }
-
 }
