@@ -1,4 +1,3 @@
-# AlgTrader©
 
 ###### REACT VERSION
  
