@@ -1,0 +1,122 @@
+@import "../../App/themeConfig/variables";
+.login-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/login-bg-light.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @primary-plus;;
+}
+
+.login-bg-with-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/login-bg-light.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  animation: image_blur 1s linear;
+  background-color: @primary-plus;
+}
+
+@keyframes image_blur {
+  from {filter: blur(0);}
+  to {filter: blur(5px);}
+}
+
+.login-container {
+  direction: @direction;
+  min-height: 100vh;
+
+  .white-login-input {
+    input {
+      background: @primary-plus !important;
+      color: @text-color-primary !important;
+    }
+
+    svg {
+      fill: @primary !important;
+    }
+  }
+
+  input {
+    &::placeholder {
+      text-align: right !important;
+    }
+
+    background: @primary-plus !important;
+    margin-top: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .ant-input-prefix {
+    svg {
+      fill: @text-color-primary;
+    }
+  }
+  .login-form {
+    width: 300px;
+
+    .ant-input {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  .login-form-button {
+    width: 100%;
+
+    i {
+      vertical-align: bottom;
+      svg {
+        fill: @text-color-primary;
+      }
+    }
+
+    span {
+      margin-right: 8px;
+      margin-left: 0;
+      color: @text-color-primary;
+    }
+  }
+
+  .login-select-country {
+    width: 90px !important;
+  }
+  .ant-card {
+    background: @primary-plus !important;
+    .ant-card-body {
+      padding: 24px !important;
+    }
+  }
+
+  .logo-type {
+    text-align: center;
+    padding-bottom: 10px;
+
+    span {
+      float: right;
+      line-height: 50px;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+}
+
+.login-icon-color {
+  svg {
+    fill: @processing-color !important;
+    font-size: 15px;
+  }
+}
+.anticon-eye, .anticon-eye-invisible {
+  padding-left: 10px;
+}
